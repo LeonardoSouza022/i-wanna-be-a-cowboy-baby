@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://btpqcvh1gixme"]
+
+[ext_resource type="Script" uid="uid://c62sxwie4xljs" path="res://character_body_2d.gd" id="1_vhvaj"]
+[ext_resource type="Texture2D" uid="uid://r4gyle6xj1nx" path="res://Sprites/Inimigo2.webp" id="2_hgmni"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8nd5y"]
+radius = 19.0
+height = 62.0
+
+[node name="Inimigo2" type="CharacterBody2D" groups=["enemies"]]
+script = ExtResource("1_vhvaj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.169768, 0.165648)
+texture = ExtResource("2_hgmni")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_8nd5y")

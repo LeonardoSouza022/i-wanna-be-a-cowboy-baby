@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://djbcb0mxewosg"]
+
+[ext_resource type="Script" uid="uid://ckukswuy7g5ht" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://buls1661pn0gc" path="res://Sprites/monataria.webp" id="2_hqtel"]
+[ext_resource type="Texture2D" uid="uid://bcnbn02kkq2bp" path="res://Sprites/player3.png" id="2_i3pqv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i3pqv")
+}],
+"loop": true,
+"name": &"Cavalgando",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sweqy"]
+radius = 17.0
+height = 36.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_onrkg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(578, 322)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(140, 596)
+scale = Vector2(0.144444, 0.144444)
+texture = ExtResource("2_hqtel")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(138.987, 567.072)
+scale = Vector2(0.0300086, 0.0220205)
+sprite_frames = SubResource("SpriteFrames_hqtel")
+animation = &"Cavalgando"
+frame_progress = 0.247989
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(138, 567)
+shape = SubResource("CapsuleShape2D_sweqy")

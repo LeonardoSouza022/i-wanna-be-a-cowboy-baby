@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://clyuhx8u38co3"]
+
+[ext_resource type="PackedScene" uid="uid://djbcb0mxewosg" path="res://player.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://be6bafv7r6j3n" path="res://Background.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://v02t6ya7m0lj" path="res://spawner.gd" id="3_h2yge"]
+
+[node name="main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(-4, -36)
+
+[node name="Player" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(0, -97)
+
+[node name="Spawner" type="Node2D" parent="."]
+script = ExtResource("3_h2yge")
+
+[node name="Marker2D" type="Marker2D" parent="Spawner"]
+position = Vector2(1235, 546)
+
+[node name="SpawnTimer" type="Timer" parent="Spawner"]
