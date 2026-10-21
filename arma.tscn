@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dnfycx1h5t4rh"]
+
+[ext_resource type="Script" uid="uid://co76q1pnxmohw" path="res://arma.gd" id="1_uya3a"]
+[ext_resource type="Texture2D" uid="uid://c1hstk0c57ytu" path="res://Sprites/arma.png" id="2_bftl6"]
+
+[node name="arma" type="Node2D" unique_id=1322569584]
+script = ExtResource("1_uya3a")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=61917829]
+position = Vector2(-33.749996, 39.500004)
+scale = Vector2(0.2451087, 0.24270557)
+texture = ExtResource("2_bftl6")
+flip_h = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=635391154]
+position = Vector2(73, -34)

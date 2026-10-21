@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://qq0cjrtt25qc"]
+
+[ext_resource type="Script" uid="uid://b4otd3cndmdrj" path="res://node_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://b0gbedgigew2g" path="res://Sprites/7belo_sem_fundo.png" id="1_wtcfe"]
+
+[node name="bala" type="Node2D" unique_id=1268017609]
+script = ExtResource("1_0e48y")
+
+[node name="7belo" type="Sprite2D" parent="." unique_id=656815254]
+scale = Vector2(0.009, 0.009)
+texture = ExtResource("1_wtcfe")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=769253604]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
