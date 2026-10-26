@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ct1kync1e0hkc"]
+
+[ext_resource type="Script" uid="uid://xm5s5yrbkhnj" path="res://bala.gd" id="1_ag3k0"]
+[ext_resource type="Texture2D" uid="uid://b0gbedgigew2g" path="res://Sprites/7belo_sem_fundo.png" id="2_tqo1u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bftl6"]
+radius = 2.2239265
+height = 13.803681
+
+[node name="Bala" type="Area2D" unique_id=975788967]
+script = ExtResource("1_ag3k0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=909397085]
+position = Vector2(2, 4)
+rotation = 1.5707964
+scale = Vector2(13.04, 13.04)
+shape = SubResource("CapsuleShape2D_bftl6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=456749581]
+position = Vector2(0, 1)
+scale = Vector2(0.2162791, 0.2162791)
+texture = ExtResource("2_tqo1u")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://inimigo_voador.gd" id="1_flying"]
+[ext_resource type="Texture2D" path="res://Sprites/Inimigo1.webp" id="2_enemy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_flying"]
+radius = 19.0
+height = 62.0
+
+[node name="InimigoVoador1" type="CharacterBody2D" groups=["enemies", "flying_enemies"]]
+script = ExtResource("1_flying")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.173611, 0.173611)
+texture = ExtResource("2_enemy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_flying")

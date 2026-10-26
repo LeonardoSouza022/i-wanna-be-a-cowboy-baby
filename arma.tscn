@@ -7,8 +7,8 @@
 script = ExtResource("1_uya3a")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=61917829]
-position = Vector2(-33.749996, 39.500004)
-scale = Vector2(0.2451087, 0.24270557)
+position = Vector2(627.63354, -502.547)
+scale = Vector2(1.682899, 1.6828991)
 texture = ExtResource("2_bftl6")
 flip_h = true
 

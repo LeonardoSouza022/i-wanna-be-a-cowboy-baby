@@ -20,7 +20,12 @@ scale = Vector2(0.03, 0.03)
 [node name="Spawner" type="Node2D" parent="." unique_id=75708282]
 script = ExtResource("3_h2yge")
 
-[node name="Marker2D" type="Marker2D" parent="Spawner" unique_id=1784810208]
+[node name="GroundSpawnPoint" type="Marker2D" parent="Spawner"]
 position = Vector2(1235, 546)
 
-[node name="SpawnTimer" type="Timer" parent="Spawner" unique_id=2046495839]
+[node name="FlyingSpawnPoint" type="Marker2D" parent="Spawner"]
+position = Vector2(1235, 100)
+
+[node name="SpawnTimer" type="Timer" parent="Spawner"]
+
+[node name="FlyingSpawnTimer" type="Timer" parent="Spawner"]
