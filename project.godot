@@ -19,6 +19,10 @@ run/main_scene="uid://clyuhx8u38co3"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ScoreManager="*res://score_manager.gd"
+
 [global_group]
 
 enemies=""

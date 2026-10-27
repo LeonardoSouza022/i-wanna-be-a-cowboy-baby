@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cgoyun134iguc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bubble"]
+content_margin_left = 28.0
+content_margin_top = 18.0
+content_margin_right = 28.0
+content_margin_bottom = 18.0
+bg_color = Color(1, 0.972549, 0.905882, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+shadow_color = Color(0, 0, 0, 0.35)
+shadow_size = 8
+shadow_offset = Vector2(4, 5)
+
+[node name="SpeechBubble" type="Control" unique_id=944672274]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 760.0
+offset_bottom = 165.0
+mouse_filter = 2
+
+[node name="Visuals" type="Control" parent="." unique_id=1057026594]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Bubble" type="PanelContainer" parent="Visuals" unique_id=62828737]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 329.0
+offset_right = 831.0
+offset_bottom = 444.00003
+scale = Vector2(1.2800002, 1.5127275)
+theme_override_styles/panel = SubResource("StyleBoxFlat_bubble")
+
+[node name="Tail" type="Polygon2D" parent="Visuals/Bubble" unique_id=391672513]
+color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+polygon = PackedVector2Array(60, 114, 102, 114, 68, 150)
+
+[node name="TailInner" type="Polygon2D" parent="Visuals/Bubble" unique_id=1232428694]
+color = Color(1, 0.972549, 0.905882, 1)
+polygon = PackedVector2Array(64, 113, 96, 113, 70, 142)
+
+[node name="Phrase" type="Label" parent="Visuals/Bubble" unique_id=1682774464]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+theme_override_font_sizes/font_size = 24
+text = "Bebê Cowboy: \"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

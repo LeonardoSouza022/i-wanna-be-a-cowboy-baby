@@ -23,16 +23,17 @@ height = 36.0
 script = ExtResource("1_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(578, 322)
+top_level = true
+position = Vector2(578, 260)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(140, 596)
-scale = Vector2(0.144444, 0.144444)
+scale = Vector2(0.288888, 0.288888)
 texture = ExtResource("2_hqtel")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(138.987, 567.072)
-scale = Vector2(0.0300086, 0.0220205)
+scale = Vector2(0.060017, 0.044041)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"Cavalgando"
 frame_progress = 0.247989

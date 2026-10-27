@@ -4,8 +4,25 @@
 [ext_resource type="PackedScene" uid="uid://be6bafv7r6j3n" path="res://Background.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://dnfycx1h5t4rh" path="res://arma.tscn" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://v02t6ya7m0lj" path="res://spawner.gd" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://pkyfkldcqegc" path="res://main.gd" id="4_main"]
+[ext_resource type="PackedScene" uid="uid://cgoyun134iguc" path="res://speech_bubble.tscn" id="5_bubble"]
 
 [node name="main" type="Node2D" unique_id=87103456]
+script = ExtResource("4_main")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1020720022]
+
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=86589005]
+offset_left = 24.0
+offset_top = 20.0
+theme_override_font_sizes/font_size = 28
+
+[node name="SpeechBubble" parent="HUD" unique_id=1973771862 instance=ExtResource("5_bubble")]
+offset_left = 96.00001
+offset_top = 212.0
+offset_right = 832.0
+offset_bottom = 325.0
+scale = Vector2(0.39999998, 0.39999998)
 
 [node name="Background" parent="." unique_id=1203585207 instance=ExtResource("2_h2yge")]
 position = Vector2(-4, -36)
@@ -20,12 +37,12 @@ scale = Vector2(0.03, 0.03)
 [node name="Spawner" type="Node2D" parent="." unique_id=75708282]
 script = ExtResource("3_h2yge")
 
-[node name="GroundSpawnPoint" type="Marker2D" parent="Spawner"]
+[node name="GroundSpawnPoint" type="Marker2D" parent="Spawner" unique_id=881269394]
 position = Vector2(1235, 546)
 
-[node name="FlyingSpawnPoint" type="Marker2D" parent="Spawner"]
+[node name="FlyingSpawnPoint" type="Marker2D" parent="Spawner" unique_id=706904802]
 position = Vector2(1235, 100)
 
-[node name="SpawnTimer" type="Timer" parent="Spawner"]
+[node name="SpawnTimer" type="Timer" parent="Spawner" unique_id=1346886624]
 
-[node name="FlyingSpawnTimer" type="Timer" parent="Spawner"]
+[node name="FlyingSpawnTimer" type="Timer" parent="Spawner" unique_id=1399417431]
