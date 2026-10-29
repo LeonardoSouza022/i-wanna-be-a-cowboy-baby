@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://co76q1pnxmohw" path="res://arma.gd" id="1_uya3a"]
 [ext_resource type="Texture2D" uid="uid://c1hstk0c57ytu" path="res://Sprites/arma.png" id="2_bftl6"]
+[ext_resource type="Texture2D" uid="uid://c0c2pqgmmfj8u" path="res://Sprites/recarregar.webp" id="3_bftl6"]
 
 [node name="arma" type="Node2D" unique_id=1322569584]
 script = ExtResource("1_uya3a")
@@ -14,3 +15,9 @@ flip_h = true
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=635391154]
 position = Vector2(73, -34)
+
+[node name="Relouding" type="Sprite2D" parent="." unique_id=1325554288]
+visible = false
+position = Vector2(677.9999, 133.00003)
+scale = Vector2(6.4101563, 6.4101563)
+texture = ExtResource("3_bftl6")

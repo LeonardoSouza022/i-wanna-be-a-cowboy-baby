@@ -39,7 +39,8 @@ func spawn_flying_enemies() -> void:
 	add_child(enemy)
 
 	enemy.global_position.x = get_spawn_x()
-	enemy.global_position.y = flying_spawn_point.global_position.y
+	var variacaoIni = randf_range(2.0, 4.5)
+	enemy.global_position.y = flying_spawn_point.global_position.y + variacaoIni
 
 	start_flying_spawn_timer()
 

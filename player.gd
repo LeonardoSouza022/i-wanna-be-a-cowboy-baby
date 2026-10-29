@@ -5,6 +5,7 @@ const jump_velocity = -300.0
 @onready var sprite = $AnimatedSprite2D
 @onready var colisionshape = $CollisionShape2D
 
+
 var dead = false
 
 func _physics_process(delta: float) -> void:

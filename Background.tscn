@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://be6bafv7r6j3n"]
 
-[ext_resource type="Texture2D" uid="uid://dtm0pwfhitacs" path="res://western_background.svg" id="1_western"]
+[ext_resource type="Texture2D" uid="uid://c0b6i4lt13pts" path="res://western_background.png" id="1_dpw2a"]
 [ext_resource type="Script" uid="uid://243hsvcokhap" path="res://sprite_2d.gd" id="2_scroll"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44cfe"]
@@ -12,7 +12,7 @@ position = Vector2(-4, 69)
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=421130501]
 texture_repeat = 2
 position = Vector2(582, 261)
-texture = ExtResource("1_western")
+texture = ExtResource("1_dpw2a")
 region_enabled = true
 region_rect = Rect2(0, 0, 1155, 650)
 script = ExtResource("2_scroll")
